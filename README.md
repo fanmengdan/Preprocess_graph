@@ -2,7 +2,7 @@
   <h1 id="Preprocess Graph"><a href="https://gitee.com/fanmengdan1/preprocess_graph_mac/" target="repo">Preprocess Graph</a></h1>
 </div>
 
-#### This code aims at preprocessing the information of *entity reference graph* and *code change graph* output from *[Build Ground Truth](https://gitee.com/fanmengdan1/SmartCommitCore_GT)* to adjacency matrix that a GNN can learn.
+#### This code aims at preprocessing the information of *entity reference graph* and *code change graph* to adjacency matrix that a GNN can learn.
 
 ## Requirements
 - macOS/Windows/Linux
