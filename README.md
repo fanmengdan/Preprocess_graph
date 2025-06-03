@@ -42,3 +42,28 @@
 Pad all Adjs into the same shape.
 **Cutting.py:**
 Cut all Adjs into the same shape.
+
+
+
+## Datasets
+
+The dataset is in the `HD-GNN` folder, which contains the information of entity reference graph and code change graph of each tangled commit. 
+
+As described in section 5.2 of the accepted paper, we used a common dataset. Each composite/tangled commit in this dataset is composed of 2/3/5 atomic commits. 
+
+Directory structure:
+- `HD-GNN/dataset/glide/2/` - Tangled commits each consisting of 2 atomic commits
+- `HD-GNN/dataset/glide/3/` - Tangled commits each consisting of 3 atomic commits  
+- `HD-GNN/dataset/glide/5/` - Tangled commits each consisting of 5 atomic commits
+
+Each subfolder (e.g., `0bdf6a7_928c9a1` in `HD-GNN/dataset/glide/5/`) contains the ground truth files for that tangled commit (composed of commits 0bdf6a7 and 928c9a1 in this example).
+
+Example files in each commit folder:
+- **GT_0bdf6a7_928c9a1.txt** - The ground truth. Records the code change included by each atomic commit using their IDs.
+- **Id_0bdf6a7_928c9a1.txt** - The entity ID information. Records entities of the tangled commit using their IDs.  
+- **Type_0bdf6a7_928c9a1.txt** - The entity type information. Records type of each entity in the tangled commit.
+- **Index_0bdf6a7_928c9a1.txt** - The index information. Records which code changes contain each entity using their IDs.
+- **Source_0bdf6a7_928c9a1.txt** - The syntactic relation information. Records the source entity of each syntactic relation.
+- **Target_0bdf6a7_928c9a1.txt** - The syntactic relation information. Records the target entity of each syntactic relation.
+
+The meaning of other data files follows the same pattern.
